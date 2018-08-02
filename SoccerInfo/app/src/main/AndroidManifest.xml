@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.acer.soccerinfo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SoccerDetail">
+
+        </activity>
+        <activity android:name=".Teams"
+            android:parentActivityName=".SoccerDetail"
+            android:launchMode="singleTop">
+        </activity>
+        <activity android:name=".Schedule"
+            android:parentActivityName=".SoccerDetail"
+            android:launchMode="singleTop">
+        </activity>
+        <activity android:name=".Result"
+            android:parentActivityName=".SoccerDetail"
+            android:launchMode="singleTop">
+        </activity>
+        <activity
+            android:name=".TeamDetailsDisplayer"
+            android:label="@string/title_activity_team_details_displayer"
+            android:parentActivityName=".Teams"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".PlayerActivity"
+            android:parentActivityName=".TeamDetailsDisplayer"
+            android:launchMode="singleTop">
+        </activity>
+
+        <provider
+            android:name=".MyContentProvider"
+            android:authorities="com.example.acer.soccerinfo"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".PlayerDetailsDisplayer"
+            android:label="@string/title_activity_player_details_displayer"
+            android:parentActivityName=".PlayerActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <receiver android:name=".PlayerNameWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/player_name_widget_info" />
+        </receiver>
+    </application>
+
+</manifest>

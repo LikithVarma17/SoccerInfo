@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeamDetailsDisplayer$PlaceholderFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ten"
+        android:layout_marginEnd="@dimen/ten"
+        android:layout_marginStart="@dimen/ten"
+        android:layout_marginTop="@dimen/ten"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/team_image_logo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/twohundred"
+            android:contentDescription="@string/teamImage"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/team_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/twentysp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/team_other_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/twentysp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/team_descrption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/ten"
+            android:textSize="@dimen/fifteensp" />
+
+        <TextView
+            android:id="@+id/team_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textSize="@dimen/twelvesp" />
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/ten"
+            android:layout_marginEnd="@dimen/twenty"
+            android:text="@string/show_players" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="@string/fav"
+        android:icon="@mipmap/unchecked"
+        app:showAsAction="always"
+        android:id="@+id/fav"
+        android:contentDescription="@string/shows_favourites"/>
+</menu>

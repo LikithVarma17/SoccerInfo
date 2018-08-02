@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/teamName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/name"
+        android:textSize="@dimen/twentyfivesp"
+        android:textStyle="bold"></TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/twodp"
+        android:background="@color/black"></View>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ten"
+        android:layout_marginStart="@dimen/ten"
+        android:columnCount="2">
+
+        <TextView
+            android:id="@+id/played"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/played"
+            android:textSize="@dimen/twentysp"></TextView>
+
+        <TextView
+            android:id="@+id/win"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onetwenty"
+            android:text="@string/win"
+            android:textSize="@dimen/twentysp"></TextView>
+
+        <TextView
+            android:id="@+id/loss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loss"
+            android:textSize="@dimen/twentysp"></TextView>
+
+        <TextView
+            android:id="@+id/draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/onetwenty"
+            android:text="@string/draw"
+            android:textSize="@dimen/twentysp"></TextView>
+
+    </GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/twodp"
+        android:background="@color/black"></View>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1068849467387",
+    "firebase_url": "https://project-49d4e.firebaseio.com",
+    "project_id": "project-49d4e",
+    "storage_bucket": "project-49d4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068849467387:android:6d402d0acdd157f0",
+        "android_client_info": {
+          "package_name": "com.example.acer.soccerinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068849467387-cdjbba0d4k0spbkjd76qgtmvq05u8ln2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.acer.soccerinfo",
+            "certificate_hash": "4068a23955454b9c34ffa46745aca92bad9f2f9b"
+          }
+        },
+        {
+          "client_id": "1068849467387-rp75g50ph6m3u2m3io4m5eqj5rj54c2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_GQCotA1ydr1cxI9eHnHb8wzHpPTDMj8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068849467387-rp75g50ph6m3u2m3io4m5eqj5rj54c2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
